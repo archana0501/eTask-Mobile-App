@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".update_Details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/label_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="@string/Title"
+                    android:textSize="20dp"
+                    android:textColor="@color/Black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/lightshade"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/Displayup_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:padding="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/first"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/Label_startDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/start_date"
+                    android:padding="15dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/Black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:boxStrokeColor="@color/colorPrimary">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/lightshade"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/Display_startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_format"
+                    android:padding="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/Label_startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/Black"
+                    android:text="@string/start_time" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:boxStrokeColor="@color/colorPrimary">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/lightshade"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@id/Label_startTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/date_format"
+                    android:padding="15dp"
+                    android:layout_marginRight="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/Third"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/second"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/Label_endDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/end_date"
+                    android:padding="15dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/Black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Display_endDate"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightshade"
+                    android:padding="15dp"
+                    android:text="@string/time_format" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/Label_endTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/end_time"
+                    android:padding="15dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/Black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/lightshade"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"                    android:id="@id/Label_endTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/time_format"
+                    android:padding="15dp"
+                    android:layout_marginRight="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/Fourth"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/Third">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="0dp">
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/label_Assigned"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:padding="20dp"
+                    android:text="@string/assigned"
+                    android:textColor="@color/Black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/lightshade"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"                    android:id="@+id/Display__Assigned"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="15dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/Fifth"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/Fourth">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/label_priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/priority"
+                    android:textSize="20dp"
+                    android:padding="20dp"
+                    android:textColor="@color/Black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/lightshade"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"                    android:id="@+id/Display__priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="15dp"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/Sixth"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/Fifth">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/label_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:padding="20dp"
+                    android:text="Desc"
+                    android:textColor="@color/Black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Display_description"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_margin="15dp"
+                    android:background="@color/lightshade"
+                    android:padding="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Seventh"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Sixth"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/update_save"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
+                android:text="@string/save_button"
+                android:textColor="@color/Black"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
